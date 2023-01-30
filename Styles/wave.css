@@ -1,0 +1,53 @@
+#waveContainer {
+    width: 100vw;
+    display: flex;
+}
+
+.wave {
+    display: flex;
+}
+
+.wave span {
+    display: block;
+    width: 10px;
+    height: 30px;
+    margin: 1px;
+    border-radius: 8px;
+    background-color:#BF45AB;
+    animation: 3s infinite wave;
+}
+
+.wave span:nth-child(2) {
+    animation-delay: 0.5s;
+    background-color: #67428C;
+}
+
+.wave span:nth-of-type(3) {
+    animation-delay: 1s;
+    background-color: #302A59;
+}
+
+.wave span:nth-of-type(4) {
+    animation-delay: 1.5s;
+    background-color: #7991D9;
+}
+
+.wave span:nth-of-type(5) {
+    animation-delay: 2s;
+    background-color: #024873;
+}
+
+@keyframes wave {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
+  
+    100% {
+        transform: scaleY(1);
+    }
+}
+  
